@@ -109,7 +109,6 @@ exports.push([module.i, "* {\n  margin: 0;\n  padding: 0; }\n\n.wrapper {\n  max
 
 "use strict";
 
-
 /*
   MIT License http://www.opensource.org/licenses/mit-license.php
   Author Tobias Koppers @sokra
