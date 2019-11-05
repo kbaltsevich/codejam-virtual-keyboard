@@ -1,5 +1,7 @@
 const body = document.querySelector('body');
 
+import {locStore} from './../module/localstor.js'
+
 export function addTemplate() {
     let article = document.createElement('article');
     article.classList.add('wrapper');
