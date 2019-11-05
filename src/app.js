@@ -6,10 +6,6 @@ import {locStore} from './module/localstor.js';
 
 addTemplate();
 
-
-
-
-
 const rows = document.querySelectorAll('.keyboard__row');
 
 rows.forEach(function (item, index) {
@@ -63,7 +59,6 @@ document.addEventListener('keydown', function (event) {
         });
     }
 })
-
 
 
 document.addEventListener('keyup', event => {
