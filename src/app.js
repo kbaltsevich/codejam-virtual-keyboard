@@ -114,7 +114,7 @@ document.addEventListener('keyup', event => {
 
 
 document.addEventListener('keyup', event => {
-    if (event.code == 'ShiftLeft' && event.code) {
+    if (event.code == 'ShiftLeft' && event.ctrlKey) {
         keyLang.forEach(function (key, index) {
             key.classList.toggle('off');
             if(key.classList.contains('off')){

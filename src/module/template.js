@@ -1,6 +1,5 @@
 const body = document.querySelector('body');
 
-import {locStore} from './../module/localstor.js'
 
 export function addTemplate() {
     let article = document.createElement('article');
@@ -27,10 +26,6 @@ export function addTemplate() {
     keyboard.classList.add('keyboard');
 
     sectionKey.append(keyboard);
-
-   
-    
-    let fragment = document.createDocumentFragment();
     
     for(let i=0; i<5; i++){
         let rowKey = document.createElement('div');
@@ -38,9 +33,11 @@ export function addTemplate() {
         keyboard.append(rowKey);
     }
 
-    console.log(fragment);
+    let titleText = document.createElement('h2');
+    titleText.textContent = "change language 'Ctrl (left) + Shift (left)'";
+    
+    article.append(titleText);
 
-    keyboard.append(fragment);
     return article.append(sectionKey);
 }
 
