@@ -4,8 +4,6 @@ import {addKey} from './module/key.js';
 import {keys} from './module/keys.js';
 import {locStore} from './module/localstor.js';
 
-
-
 const metaKeys = ['Tab', 'ShiftLeft', 'ShiftRight', 'AltRight', 'AltLeft', 'ControlLeft', 'ControlRight', 'MetaRight', 'MetaLeft', 'CapsLock', 'ContextMenu', 'Enter', 'Backspace']
 addTemplate();
 
@@ -39,12 +37,10 @@ rows.forEach((item, index) => {
 
 locStore();
 
-
 const keyboardKeys = document.querySelectorAll('.keyboard__key');
 const keyLang = document.querySelectorAll('.lang');
 const keyUpDown = document.querySelectorAll('.case');
 const textarea = document.querySelector('textarea');
-
 
 document.addEventListener('keydown', event => {
     event.preventDefault();
@@ -133,7 +129,6 @@ keyboardKeys.forEach(item => {
         item.classList.remove('keyboard__key--active');
     })
 })
-
 
 function capsLock(event) {
     keyUpDown.forEach(key => {
